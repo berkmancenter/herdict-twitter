@@ -16,6 +16,7 @@ tweets <- readLines("../Data/Training_Data_Raw.txt", encoding = "UTF-8")
 
 tweets <- gsub('\\"', "", tweets)
 tweets <- unescape(tweets)
+tweets <- tweets[grep("http://t.co/", tweets, invert = TRUE)]
 tweets <- tweets[substr(tweets, 0, 2) != "RT"]
 tweets <- tweets[!duplicated(tweets)]
 
