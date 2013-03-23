@@ -1,10 +1,10 @@
-# Uses the Twitter Search API to retrieve historical tweets that may
+# Uses the Twitter Search API to retrieve historical Tweets that may
 # express Internet censorship or inaccessibility.
 
 
 library(twitteR)
 
-setwd("../../Data")
+setwd("../Stream_And_Classify/Data")
 
 verbs <- c("censor", "censored", "censoring", "censorship",
            "block", "blocked", "blocking",
